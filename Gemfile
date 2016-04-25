@@ -9,7 +9,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'enumerate_it'
 gem 'responders'
-gem 'slim'
+gem 'slim-rails'
+gem 'html2slim'
 
 group :development do
 	gem 'sqlite3'
