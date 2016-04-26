@@ -1,15 +1,15 @@
-require 'spec_helper'
+require 'rails_helper'
 
 RSpec.describe "classrooms/index", type: :view do
   before(:each) do
     assign(:classrooms, [
       Classroom.create!(
         :students_id => 1,
-        :courses_integer => 2
+        :courses_id => 2
       ),
       Classroom.create!(
         :students_id => 1,
-        :courses_integer => 2
+        :courses_id => 2
       )
     ])
   end

@@ -1,10 +1,10 @@
-require 'spec_helper'
+require 'rails_helper'
 
 RSpec.describe "classrooms/show", type: :view do
   before(:each) do
     @classroom = assign(:classroom, Classroom.create!(
       :students_id => 1,
-      :courses_integer => 2
+      :courses_id => 2
     ))
   end
 
