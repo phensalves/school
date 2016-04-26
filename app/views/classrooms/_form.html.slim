@@ -7,12 +7,12 @@
           li = message
 
   .field
-    = f.label :students_id
-    = f.number_field :students_id 
+    = f.label "Student ID"
+    = f.number_field :students_id
   .field
-    = f.label :courses_id
+    = f.label "Course ID"
     = f.number_field :courses_id 
   .field
-    = f.label :entry_at
+    = f.label "Entry Date"
     = f.datetime_select :entry_at
   .actions = f.submit

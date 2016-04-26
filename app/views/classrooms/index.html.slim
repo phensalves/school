@@ -3,20 +3,21 @@ h1 Listing classrooms
 table
   thead
     tr
+      th Classroom ID
       th Students
       th Courses
       th Entry at
-      th
       th
       th
 
   tbody
     - @classrooms.each do |classroom|
       tr
+        td = classroom.id
         td = classroom.students_id
         td = classroom.courses_id
         td = classroom.entry_at
-        td = link_to 'Show', classroom
+        td = link_to 'Show', classroom_path(classroom)
         td = link_to 'Edit', edit_classroom_path(classroom)
         td = link_to 'Destroy', classroom, data: {:confirm => 'Are you sure?'}, :method => :delete
 
