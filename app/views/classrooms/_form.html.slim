@@ -1,4 +1,4 @@
-= form_for @classroom do |f|
+= form_for @classroom  do |f|
   - if @classroom.errors.any?
     #error_explanation
       h2 = "#{pluralize(@classroom.errors.count, "error")} prohibited this classroom from being saved:"
@@ -8,10 +8,10 @@
 
   .field
     = f.label :students_id
-    = f.number_field :students_id
+    = f.number_field :students_id 
   .field
     = f.label :courses_id
-    = f.number_field :courses_id
+    = f.number_field :courses_id 
   .field
     = f.label :entry_at
     = f.datetime_select :entry_at

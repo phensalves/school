@@ -14,4 +14,8 @@ p
   = @course.status
 = link_to 'Edit', edit_course_path(@course)
 |  | 
-= link_to 'Back', courses_path
+= link_to 'Back to Courses', courses_path
+|  |
+= link_to 'New Classroom', new_classroom_path(@course)
+|  |
+= link_to 'Show Classrooms', classrooms_path(@course)
